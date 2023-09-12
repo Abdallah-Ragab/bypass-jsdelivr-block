@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "CDN Replacer",
+  "version": "1.0",
+  "description": "Replace cdn.jsdelivr.net with cdn.jsdelivr.xyz",
+  "permissions": ["webRequest", "webRequestBlocking", "<all_urls>"],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
