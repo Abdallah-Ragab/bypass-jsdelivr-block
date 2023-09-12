@@ -12,3 +12,16 @@ chrome.webRequest.onBeforeRequest.addListener(
     { urls: ["<all_urls>"] },
     ["blocking"]
   );
+
+
+var callback = function(details) {
+    let url = details.url;
+
+}
+
+var filter = {
+    urls: ["*://*.jsdelivr.net/*"]
+}
+
+
+chrome.webRequest.onBeforeRequest.addListener(callback, filter, ["blocking"]);

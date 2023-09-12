@@ -1,10 +1,18 @@
 {
   "manifest_version": 3,
-  "name": "CDN Replacer",
-  "version": "1.0",
-  "description": "Replace cdn.jsdelivr.net with cdn.jsdelivr.xyz",
-  "permissions": ["webRequest", "webRequestBlocking", "<all_urls>"],
-  "background": {
-    "service_worker": "background.js"
-  }
+  "name": "Bypass jsDelivr Block",
+  "version": "0.1.0",
+  "description": "Bypass jsDelivr Block in Egypt and other countries by redirecting cdn.jsdelivr.net to another unblocked domain.",
+
+  "declarative_net_request" : {
+    "rule_resources" : [{
+      "id": "redirect_jsdelivr",
+      "enabled": true,
+      "path": "rules/redirect_jsdelivr.json"
+    }]
+  },
+  "permissions": [
+    "declarativeNetRequest",
+    "declarativeNetRequestFeedback"
+  ]
 }
