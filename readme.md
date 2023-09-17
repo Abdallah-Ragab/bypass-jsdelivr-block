@@ -20,4 +20,4 @@ If you find a bug or have a feature request, please open an issue on GitHub. Pul
 
 ## License
 
-This project is licensed under the MIT License. See the LICENSE file for details.
+This project is licensed under the GNU General Public License v3.0 License. See the LICENSE file for details.
